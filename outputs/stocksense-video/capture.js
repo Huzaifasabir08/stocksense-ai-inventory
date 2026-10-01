@@ -1,0 +1,41 @@
+import { createRequire } from 'module';
+import path from 'path';
+const { chromium } = createRequire(import.meta.url)('playwright');
+
+const out = import.meta.dirname;
+const browserPath = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
+const browser = await chromium.launch({ headless: true, executablePath: browserPath });
+const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
+await page.goto('http://127.0.0.1:8765/', { waitUntil: 'networkidle' });
+async function shot(name) {
+  await page.screenshot({ path: path.join(out, `${name}.png`), fullPage: false });
+}
+await shot('01-login');
+await page.getByLabel('Email').fill('manager@stocksense.local');
+await page.getByLabel('Password').fill('manager123');
+await page.getByRole('button', { name: 'Sign in to StockSense' }).click();
+await page.locator('#dashboard').waitFor({ state: 'visible' });
+await page.waitForTimeout(500);
+await shot('02-dashboard');
+await page.getByRole('button', { name: 'Inventory' }).click();
+await page.locator('#productRows').waitFor({ state: 'visible' });
+await page.waitForTimeout(500);
+await shot('03-inventory');
+await page.locator('#productSearch').fill('Type-C');
+await page.waitForTimeout(300);
+await shot('04-search');
+await page.getByRole('button', { name: 'AI Assistant' }).click();
+await page.locator('#messages').waitFor({ state: 'visible' });
+await page.getByRole('button', { name: 'Which products are running low?' }).click();
+await page.waitForTimeout(700);
+await shot('05-ai-answer');
+await page.getByRole('button', { name: 'Add 40 Type-C cables from Ali Traders.' }).click();
+await page.waitForTimeout(700);
+await shot('06-ai-proposal');
+await page.getByRole('button', { name: 'Cancel' }).click();
+await page.waitForTimeout(400);
+await shot('07-human-confirmation');
+await page.getByRole('button', { name: 'Reports & analytics' }).click();
+await page.waitForTimeout(500);
+await shot('08-reports');
+await browser.close();

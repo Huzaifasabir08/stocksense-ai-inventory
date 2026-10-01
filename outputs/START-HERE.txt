@@ -1,0 +1,25 @@
+Job Recruitment / Applicant Tracking System
+Creator: Huzaifa Sabir
+Client: Nowshera Digital
+
+Extract the ZIP into a folder before opening any page so the hiring-team.png image remains available.
+
+Pages:
+redesign.html - Careers website
+candidate-application.html - Detailed candidate application form
+candidates.html - Candidate portal
+admin.html - Admin interface preview
+index.html - Recruiter dashboard preview
+
+Other HTML files are earlier layouts and related page previews.
+
+Current status: local frontend prototype, not a live production website.
+Applications are not saved to a database and emails are not sent.
+The admin page uses a demonstration password (12345678) in browser code;
+it does not secure real candidate data. Displayed candidate records are examples.
+Do not use this prototype to collect real CNICs or CVs.
+
+Styling uses an external Tailwind CDN and requires an internet connection.
+The email-automation folder contains incomplete backend reference code;
+database storage and retry functions still require implementation.
+The 14 end-to-end acceptance tests have not passed.

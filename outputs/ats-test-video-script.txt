@@ -1,0 +1,39 @@
+JOB RECRUITMENT / APPLICANT TRACKING SYSTEM
+YouTube test walkthrough script
+Creator: Huzaifa Sabir | Client: Nowshera Digital
+
+OPENING
+"Hello, I’m Huzaifa Sabir. This is a walkthrough of my Job Recruitment and Applicant Tracking System for Nowshera Digital. The system gives candidates, recruiters, and admins one dependable place to manage hiring. AI helps summarize CVs, while people make every hiring decision."
+
+SCREEN 1 — CANDIDATE APPLICATION
+"First, I sign in as a candidate, upload a PDF CV, and apply for an open role. The application is saved as Applied, the original CV stays attached to this application, and the candidate receives an application received email."
+
+SCREEN 2 — ADMIN CREATES A JOB
+"Now I switch to the admin view. I create a job as a Draft, so candidates cannot see it. I open the job, add the deadline and openings, and assign a recruiter."
+
+SCREEN 3 — PIPELINE
+"The recruiter sees only assigned jobs. Applications move forward in order: Applied, Shortlisted, Interview, Offer, and Hired. A recruiter can reject an application at any stage before Hired, but final decisions cannot be changed."
+
+SCREEN 4 — INTERVIEW
+"For a shortlisted candidate, the recruiter schedules a one-hour interview with a future date, time, and location or meeting link. The system blocks past interviews and overlapping interviews, then emails the candidate."
+
+SCREEN 5 — DUPLICATES AND JOB RULES
+"The same candidate cannot submit a second active application for the same job. A candidate may withdraw and apply again with a new CV. Jobs close automatically after the deadline or when their openings are filled."
+
+SCREEN 6 — AI SUMMARY
+"When an application arrives, an automation creates a structured AI summary from the CV used for that application and the job requirements. It contains a short profile, requirements found and not found, and three interview questions. It never scores, ranks, hires, rejects, or changes a stage."
+
+SCREEN 7 — PRIVACY
+"Candidates see only their own applications and CVs. Recruiters see only jobs assigned to them. Recruiter notes and AI summaries stay private. These permissions are checked on the server, not just hidden in the interface."
+
+SCREEN 8 — FAILURE FALLBACK
+"If the AI step fails, the application and email still work. The recruiter sees Summary not available and can press Try again. Retrying the summary does not send another candidate email."
+
+CLOSING
+"That completes the Job Recruitment and Applicant Tracking System walkthrough. The interface is designed to be clear, graceful, and easy to use across candidate, recruiter, and admin workflows. The 14 acceptance tests are ready to run after approval."
+
+RECORDING NOTES
+- Record at 1080p, 30 frames per second, with a quiet microphone.
+- Keep the browser at 100% zoom and show one workflow per scene.
+- Use the supplied project screens: outputs/index.html for recruiter and admin, outputs/candidate.html for candidate flow.
+- Add the spoken paragraphs as captions. Keep each caption on screen for at least 3 seconds.

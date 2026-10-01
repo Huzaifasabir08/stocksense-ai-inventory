@@ -1,0 +1,13 @@
+{
+  "application.received": {
+    "admin": "application details, date, company, candidate, reference ID",
+    "candidate": "successful submission, review status, next-step notice"
+  },
+  "invoice.created": {
+    "recipient": "configured recipient",
+    "attachment": "professional invoice PDF"
+  },
+  "delivery.failure": {
+    "behavior": "persist failure, show a safe retry state, keep application saved, never duplicate the application"
+  }
+}

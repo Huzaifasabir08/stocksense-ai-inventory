@@ -1,0 +1,8 @@
+@echo off
+cd /d "%~dp0"
+py -3 launch.py
+if errorlevel 1 (
+  echo Startup failed. Review the error above.
+  pause
+  exit /b 1
+)

@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:12,000
+Hello, I’m Huzaifa Sabir. This is a walkthrough of my Job Recruitment and Applicant Tracking System for Nowshera Digital.
+
+2
+00:00:12,000 --> 00:00:25,000
+Candidates, recruiters, and admins share one dependable hiring workspace. AI summarizes CVs, while people make every hiring decision.
+
+3
+00:00:25,000 --> 00:00:40,000
+I sign in as a candidate, upload a PDF CV, and apply for an open role. The application is saved as Applied and the candidate receives an email.
+
+4
+00:00:40,000 --> 00:00:55,000
+As admin, I create a job as a Draft, open it, set the deadline and openings, and assign a recruiter.
+
+5
+00:00:55,000 --> 00:01:12,000
+Recruiters move applications forward in order: Applied, Shortlisted, Interview, Offer, and Hired. Rejection is allowed before Hired.
+
+6
+00:01:12,000 --> 00:01:28,000
+The interview scheduler requires a future one-hour slot and blocks overlaps for the same recruiter.
+
+7
+00:01:28,000 --> 00:01:44,000
+Duplicate active applications are blocked. Candidates can withdraw and apply again with a new CV.
+
+8
+00:01:44,000 --> 00:02:03,000
+The AI summary includes a profile, requirements found and not found, and three interview questions. It never scores or makes hiring decisions.
+
+9
+00:02:03,000 --> 00:02:20,000
+Candidates see only their own data. Recruiters see only assigned jobs. Notes and summaries stay private.
+
+10
+00:02:20,000 --> 00:02:37,000
+If AI fails, the application and email still work. The recruiter sees Summary not available and can try again without sending another email.
+
+11
+00:02:37,000 --> 00:02:49,000
+That completes the Job Recruitment and Applicant Tracking System walkthrough by Huzaifa Sabir for Nowshera Digital.
